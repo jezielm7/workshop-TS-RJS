@@ -1,5 +1,5 @@
 const text: string = 'text';
-const number: number = 'text';
+const number: number = 1512;
 const bool: boolean = true;
 
 const array: string[] = ['a', 'b'];
@@ -27,10 +27,10 @@ function sumV(num1: number, num2: number): void {
 
 
 function never(param1, param2): never {
-  while(true) {
+  while (true) {
     console.log('hello friend!');
   }
-  
+
   // or
 
   throw new Error('');
