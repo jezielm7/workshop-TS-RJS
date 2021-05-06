@@ -169,3 +169,34 @@ const any: any = {};
 
 ### O Readonly define as propriedades para apenas leitura.
 ### Ou seja, as propriedades definidas se tornam imutáveis.
+
+
+# Generics
+
+### São funcionalidades que permitem a passagem de tipos.
+
+```js
+  function print<T>(param: T) {
+    console.log(param);
+  }
+
+  function printNumber(number: number) {
+    print<number>(number);
+  }
+
+  print<string>('test');
+```
+
+### Generics Keywords
+
+    T: Type;
+    S: State;
+    K: Key;
+    V: Value;
+    E: Element;
+
+```js 
+  function useState<S extends number | string = string>(initialState ?: S) {};
+  
+  // Definindo tipos específicos e default para o generic.
+```
